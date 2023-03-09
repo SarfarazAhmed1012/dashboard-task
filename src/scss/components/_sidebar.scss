@@ -1,0 +1,65 @@
+.sidebar {
+  background-color: #eff2f5;
+  color: white;
+
+  .balances {
+    margin-top: 2rem;
+  }
+
+  .brand {
+    background-color: #eff2f5;
+    height: 10%;
+    display: flex;
+    padding: 2rem;
+    margin-top: 1rem;
+    img {
+      height: 4rem;
+      border-radius: 2rem;
+    }
+  }
+  h5 {
+    color: #4e5458;
+    font-size: 1.2rem;
+    font-weight: normal;
+    padding-left: 1.5rem;
+  }
+  .links {
+    li {
+      list-style-type: none;
+      margin: 0 auto;
+      width: 80%;
+      margin-top: 2rem;
+      font-size: 1rem;
+      &:nth-of-type(1) {
+        a {
+          color: #000000;
+          font-weight: 800;
+        }
+      }
+      a {
+        color: rgb(43, 37, 37);
+        text-decoration: none;
+        text-transform: uppercase;
+        display: flex;
+        gap: 0.7rem;
+        transition: 0.5s ease-in-out;
+        img {
+          height: 2rem;
+          border-radius: 2rem;
+        }
+      }
+    }
+  }
+  .settings {
+    padding: 2rem;
+    display: flex;
+    margin-top: 12rem;
+    gap: 1rem;
+    color: black;
+    align-items: center;
+
+    .icon {
+      font-size: 2rem;
+    }
+  }
+}

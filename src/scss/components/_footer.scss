@@ -1,0 +1,29 @@
+@mixin footer {
+  .footer {
+    display: flex;
+    // position: absolute;
+    margin-top: 6rem;
+    gap: 2rem;
+    justify-content: space-between;
+
+    .left {
+      display: flex;
+      gap: 2rem;
+      padding-left: 2rem;
+      h5 {
+        font-weight: 900;
+        font-size: 0.9rem;
+      }
+    }
+    .right {
+      padding-right: 2rem;
+      gap: 2rem;
+      font-size: 1.3rem;
+      display: flex;
+      .english {
+        display: flex;
+        gap: 0.7rem;
+      }
+    }
+  }
+}

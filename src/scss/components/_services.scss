@@ -1,0 +1,85 @@
+@mixin services {
+  .services {
+    color: white;
+    .see_button {
+      margin-top: 2rem;
+      display: flex;
+      gap: 0.2rem;
+      color: black;
+      cursor: pointer;
+    }
+
+    &__info {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 1rem;
+      h4 {
+        color: black;
+        font-size: 1.2rem;
+      }
+    }
+    .services_cards__container {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 0.5rem;
+      .services_card {
+        color: rgb(0, 0, 0);
+        display: flex;
+        gap: 1rem;
+        padding: 1.5rem;
+        background-color: rgb(255, 255, 255);
+        height: 7rem;
+        width: 100%;
+        border-radius: 0.5rem;
+        border: 1px solid rgb(228, 222, 222);
+        justify-content: space-between;
+        img {
+          height: 3rem;
+          width: 3rem;
+          border-radius: 4rem;
+          transition: 0.4s ease-in-out;
+        }
+        .heading {
+          font-size: 8rem;
+        }
+        .services_card_info {
+          display: flex;
+          flex-direction: column;
+          .heading {
+            font-size: 8rem;
+          }
+
+          .services_card__info__sub {
+            display: flex;
+            align-items: center;
+            gap: 3rem;
+            margin-top: 1rem;
+            margin-bottom: 1rem;
+            h4 {
+              width: 100%;
+              color: rgb(133, 133, 120);
+            }
+          }
+        }
+      }
+    }
+    // .services__container {
+    //   display: flex;
+    //   justify-content: space-between;
+    //   .expense {
+    //     display: flex;
+    //     flex-direction: column;
+    //     align-items: center;
+    //     gap: 0.3rem;
+    //     img {
+    //       height: 4rem;
+    //       border-radius: 2rem;
+    //       transition: 0.4s ease-in-out;
+    //     }
+    //     h6 {
+    //       color: #5f7fc5;
+    //     }
+    //   }
+    // }
+  }
+}

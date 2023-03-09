@@ -1,0 +1,87 @@
+@mixin cards {
+  .cards {
+    color: rgb(0, 0, 0);
+    width: 100%;
+
+    &__info {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 1rem;
+      .heading {
+        font-size: 1.2rem;
+        font-weight: 500;
+      }
+    }
+    .buttons {
+      background-color: rgb(202, 218, 212);
+      width: max-content;
+      // padding: 0.6rem;
+      border-radius: 0.4rem;
+      margin-bottom: 2rem;
+
+      button {
+        border-radius: 1vw;
+        padding: 1vh 3vw;
+        border: none;
+        font-size: 0.9rem;
+        gap: 1vw;
+        background-color: transparent;
+        color: black;
+        cursor: pointer;
+        font-weight: 900;
+        transition: 0.4s ease-in-out;
+      }
+      button:first-child {
+        background-color: black;
+        padding: 1rem;
+        color: white;
+      }
+    }
+    &__container {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 2rem;
+      .card {
+        color: black;
+        display: flex;
+        gap: 2rem;
+        padding: 1.5rem;
+        background-color: rgb(255, 255, 255);
+        height: 7rem;
+        width: 100%;
+        border-radius: 0.5rem;
+        border: 1px solid rgb(228, 217, 217);
+        box-shadow: 2px 2px 3px #bbb7b7;
+
+        img {
+          height: 3rem;
+          width: 3rem;
+          border-radius: 4rem;
+          transition: 0.4s ease-in-out;
+        }
+        .heading {
+          font-size: 8rem;
+        }
+        &__info {
+          display: flex;
+          flex-direction: column;
+          .heading {
+            font-size: 8rem;
+          }
+
+          &__sub {
+            display: flex;
+            align-items: center;
+            gap: 3rem;
+            margin-top: 1rem;
+            margin-bottom: 1rem;
+            h4 {
+              width: 100%;
+              color: rgb(133, 133, 120);
+            }
+          }
+        }
+      }
+    }
+  }
+}
